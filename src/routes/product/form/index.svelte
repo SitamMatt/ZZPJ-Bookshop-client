@@ -48,7 +48,8 @@
 			productSize: 0
 		},
 		onSubmit: async (values) => {
-			await fetch('http://localhost:8081/api/products', {
+			await fetch('https://zzpj-bookshop.azurewebsites.net/api/products', {
+				// await fetch('http://localhost:8081/api/products', {
 				method: 'POST',
 				body: JSON.stringify(values),
 				headers: {
@@ -68,26 +69,6 @@
 			name: 'Wolodymir'
 		}
 	];
-
-	// export let products;
-
-	// console.log(products);
-
-	// async function addProductItems(productId: Number, quantity: Number) {
-	// 	console.log(productId);
-	// 	console.log(quantity);
-	// 	await fetch('/product.json', {
-	// 		method: 'POST',
-	// 		body: JSON.stringify({
-	// 			productId,
-	// 			quantity
-	// 		}),
-	// 		headers: {
-	// 			'Content-Type': 'application/json'
-	// 		}
-	// 	});
-	// 	location.reload();
-	// }
 </script>
 
 <svelte:head>

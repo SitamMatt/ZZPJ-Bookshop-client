@@ -16,28 +16,6 @@
 		return {
 			error: new Error(message)
 		};
-		// console.log(res);
-		// // if (session.user) {
-		// // 	return {
-		// // 		status: 302,
-		// // 		redirect: '/'
-		// // 	};
-		// // }
-		// // const res = await fetch('/product/.json');
-		// // if (res.ok) {
-		// // const products = await res.json();
-
-		// // return {
-		// // 	props: { products }
-		// // };
-		// // }
-
-		// // const { message } = await res.json();
-
-		// // return {
-		// // 	error: new Error(message)
-		// // };
-		// return {};
 	}
 </script>
 

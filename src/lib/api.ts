@@ -1,6 +1,6 @@
 // @ts-nocheck
-// const base = 'http://localhost:8081/api';
-const base = 'https://zzpj-bookshop.azurewebsites.net/api';
+// export const base = 'http://localhost:8081/api';
+export const base = 'https://zzpj-bookshop.azurewebsites.net/api';
 
 async function send<T>({ method, path, data, token}): Promise<T> {
 	const opts = { method, headers: {} };

@@ -10,7 +10,8 @@
 			password: ''
 		},
 		onSubmit: async (values) => {
-			await fetch('http://localhost:8081/api/user', {
+			await fetch('https://zzpj-bookshop.azurewebsites.net/api/user', {
+				// await fetch('http://localhost:8081/api/user', {
 				method: 'POST',
 				body: JSON.stringify(values),
 				headers: {
